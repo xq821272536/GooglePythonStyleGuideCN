@@ -164,7 +164,7 @@ import jodie
 * 使用`raise MyError('Error message')`或者`raise MyError()`，不要使用两段`raise MyError, 'Error message'`
 * 当内置异常类合理的时候,尽量使用内置异常.例如:抛出`ValueError`来表示一个像是违反预设前提(例如传参了一个负数给要求正数的情况)的程序错误发生.
 
-不要使用`assert`来片段公共结构参数值.`assert`是用来确认内部计算正确性也不是用来表示一些预期外的事件发生的.如果异常是后续处理要求的,用`raise`语句来处理,例如:
+不要使用`assert`来验证公共结构参数值.`assert`是用来确认内部计算正确性也不是用来表示一些预期外的事件发生的.如果异常是后续处理要求的,用`raise`语句来处理,例如:
 
 **Yes:**
 
