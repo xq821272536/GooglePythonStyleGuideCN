@@ -121,14 +121,16 @@ import示例应该像这样:
 ```Python
 # Reference absl.flags in code with the complete name (verbose).
 # 在代码中使用完整路径调用absl.flags
-import absl.flagsfrom doctor.who import jodie
+import absl.flags
+from doctor.who import jodie
 
 FLAGS = absl.flags.FLAGS
 ```
 ``` Python
 # Reference flags in code with just the module name (common).
 # 在代码中只用包名来调用flags
-from absl import flagsfrom doctor.who import jodie
+from absl import flags
+from doctor.who import jodie
 
 FLAGS = flags.FLAGS
 ```
